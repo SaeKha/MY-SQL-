@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;   
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+/*==team==============================*/
+#team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+.team-heading h1{
+    color: white;
+    font-size: 3rem;
+    text-transform: lowercase;
+}
+.team-box{
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    user-select: none;
+    border: 10px solid #d4d4d8;
+   
+}  
+.edu-img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.edu-img::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100px;
+    height: 150px;
+    background: linear-gradient(180deg,rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+}
+.edu-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    filter: grayscale(1);
+    
+}
+.edu-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edu-text strong{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.edu-text span{
+    color:#919191;
+    font-size: 0.9rem;
+
+}
+.sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.sosmed a{
+    margin: 0px 5px;
+    color: white;
+    font-size: 0.9rem;
+    transition: all ease 0.3s;
+}
+.sosmed a:hover{
+    color: #0617ff;
+}
+
+.swiper{
+    max-width: 745px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.swiper-slide{
+    width: 300px !important;
+    opacity: 0.2;
+    margin: 50px 0px;
+    margin-top: 0px;
+}
+.swiper-slide-active{
+    opacity: 1;
+    border: 10px solid #464fd1;
+}
+@media(max-width:724px){
+    .team-heading h3{
+        font-size: 2.6rem;
+    }
+}
